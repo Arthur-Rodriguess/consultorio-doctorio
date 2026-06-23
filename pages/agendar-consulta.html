@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendar Consulta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/index.css">
+    <link rel="icon" type="image/x-icon" href="/assets/img/doctorio-favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/img/doctorio-favicon.ico">
+</head>
+<body>
+<div id="header-placeholder"></div>
+<main>
+    <section id="main-presentation" class="d-flex justify-content-center" style="background-color: rgba(34, 140, 219, 0.1); padding: 120px 0;">
+        <h1 class="text-font-ubuntu display-2 fw-medium">Agendar Consulta</h1>
+    </section>
+    
+    <section id="page-main-text" class="text-center mt-5 text-font-poppins">
+        <h2 class="display-6 fw-medium">Formulário de agendamento</h2>
+    </section>
+
+    <section class="container border rounded-4 p-3 mt-5 text-font-poppins">
+        <h3 class="text-center my-3">Por favor, preencha todos os campos obrigatórios!</h3>
+        <form class="d-flex flex-column align-items-center gap-4 mt-5">
+            <div class="row g-4 w-100">
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>Selecione o Departamento:*</label>
+                        <select class="form-control" required>
+                            <option selected disabled hidden>Selecione o departamento</option>
+                            <option>Cardiologia</option>
+                            <option>Neurologia</option>
+                            <option>Ortopedia</option>
+                            <option>Pediatria</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>Escolha o Doutor(a):*</label>
+                        <select class="form-control" required>
+                            <option selected disabled hidden>Selecione o doutor(a)</option>
+                            <option>Dra. Ana Beatriz Lima</option>
+                            <option>Dr. Rafael Mendes</option>
+                            <option>Dr. Carlos Eduardo</option>
+                            <option>Dra. Juliana Ferreira</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>Escolha a Data:*</label>
+                        <input type="date" class="form-control" required></input>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>Escolha o Horário:*</label>
+                        <input type="time" class="form-control" required></input>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>Primeiro Nome: *</label>
+                        <input type="text" class="form-control" id="first-name" placeholder="Digite seu Primeiro Nome:" required>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>Segundo Nome: *</label>
+                        <input type="text" class="form-control" id="first-name" placeholder="Digite seu Segundo Nome:" required>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>Endereço de E-mail: *</label>
+                        <input type="email" class="form-control" id="email" placeholder="Digite seu Endereço de Email:" required>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-group">
+                        <label>Número de Telefone: *</label>
+                        <div class="input-group">
+                            <span class="input-group-text" id="addon-ddi">+55</span>
+                            <input type="tel" class="form-control" id="telDDI" placeholder="(85) 99999-9999" required>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label>Notas adicionais:</label>
+                        <textarea class="form-control" rows="8" placeholder="Compartilhe suas preocupações ou necessidades específicas para nos ajudar a melhor atendê-lo."></textarea>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary px-4 py-2 fw-medium" style="background-color: #228CDB;">Confirmar Agendamento</button>
+        </form>
+    </section>
+</main>
+<script src="/assets/js/main.js"></script>
+<div id="footer-placeholder"></div>

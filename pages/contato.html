@@ -19,7 +19,7 @@
             <h2 class="display-6 fw-medium">Estamos aqui para ajudar</h2>
             <h2 class="display-6 fw-medium">Ligue para nós</h2>
         </section>
-        <div class="d-flex mx-4 mt-5">
+        <div class="d-flex justify-content-between gap-5 mx-4 mt-5">
             <section class="row g-2 text-font-poppins text-break" style="max-width: 35%;">
                 <div class="col-6">
                     <div class="d-flex flex-column gap-4 border rounded-4 p-3 h-100">
@@ -61,12 +61,52 @@
                     </div>
                 </div>
             </section>
-            <section>
-
+            
+            <section class="container border rounded-4 p-3 text-font-poppins">
+                <h3 class="text-center my-3">Entre em contato conosco!</h3>
+                <form class="d-flex flex-column align-items-center gap-4">
+                    <div class="row g-4">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Primeiro nome: *</label>
+                                <input type="text" class="form-control" id="first-name" placeholder="Digite seu Primeiro Nome:" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Endereço de email: *</label>
+                                <input type="email" class="form-control" id="email" placeholder="Digite seu Endereço de Email:" required>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">Número de telefone: *</label>
+                                <div class="input-group">
+                                    <span class="input-group-text" id="addon-ddi">+55</span>
+                                    <input type="tel" class="form-control" id="telDDI" placeholder="(85) 99999-9999" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label for="exampleFormControlSelect1">Assunto:</label>
+                                <select class="form-control" id="exampleFormControlSelect1">
+                                <option>Agendamento de consulta</option>
+                                <option>Renovação de receita</option>
+                                <option>Resultados de exames</option>
+                                <option>Duvida sobre cobrança/faturamento</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-check-label" for="exampleCheck1">Mensagem</label>
+                            <textarea class="form-control" rows="8" placeholder="Informe-nos como podemos ajudá-lo(a):"></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="col-3 btn btn-primary mt-2 px-4 py-2 fw-medium" style="background-color: #228CDB;">Enviar</button>
+                </form>
             </section>
         </div>
     </main>
-    <div id="footer-placeholder"></div>
     <script src="/assets/js/main.js"></script>
-</body>
-</html>
+<div id="footer-placeholder"></div>
